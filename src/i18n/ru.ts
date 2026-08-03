@@ -113,6 +113,14 @@ export const ru: Dict = {
     rights: 'Все права защищены.',
   },
 
+  ticker: {
+    hour: 'час',
+    rigs: 'симуляторов',
+    until: 'До',
+    noAgeLimit: 'Без возрастных ограничений',
+    forceFeedback: 'Обратная связь руля',
+  },
+
   a11y: {
     language: 'Язык',
     menu: 'Меню',

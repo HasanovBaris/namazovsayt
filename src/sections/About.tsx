@@ -4,6 +4,7 @@ import { site } from '../data/content'
 import { Section } from '../components/Section'
 import { Card } from '../components/Card'
 import { Grid } from '../components/Grid'
+import { Reveal } from '../components/Reveal'
 import { colors } from '../theme/colors'
 import { fonts, typeScale } from '../theme/typography'
 import { breakpoints } from '../theme/layout'
@@ -33,10 +34,12 @@ export function About() {
 
   return (
     <Section id="about" kicker={t.about.kicker} title={t.about.title} alt>
-      <View style={[styles.prose, isDesktop && styles.proseDesktop]}>
-        <Text style={styles.paragraph}>{t.about.p1}</Text>
-        <Text style={[styles.paragraph, styles.paragraphSpaced]}>{t.about.p2}</Text>
-      </View>
+      <Reveal>
+        <View style={[styles.prose, isDesktop && styles.proseDesktop]}>
+          <Text style={styles.paragraph}>{t.about.p1}</Text>
+          <Text style={[styles.paragraph, styles.paragraphSpaced]}>{t.about.p2}</Text>
+        </View>
+      </Reveal>
 
       <View style={styles.stats}>
         <Grid maxColumns={2} gap={14}>

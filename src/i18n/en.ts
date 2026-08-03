@@ -113,6 +113,14 @@ export const en: Dict = {
     rights: 'All rights reserved.',
   },
 
+  ticker: {
+    hour: 'hour',
+    rigs: 'simulators',
+    until: 'Open until',
+    noAgeLimit: 'No age limit',
+    forceFeedback: 'Force feedback',
+  },
+
   a11y: {
     language: 'Language',
     menu: 'Menu',

@@ -11,21 +11,34 @@ interface CardProps {
   style?: StyleProp<ViewStyle>
 }
 
-/** The single surface primitive — every panel on the site is one of these. */
-export function Card({ children, highlight, padding = 22, style }: CardProps) {
-  return (
-    <View
-      style={[
-        styles.card,
-        { padding },
-        highlight && styles.cardHighlight,
-        style,
-      ]}
-    >
+interface CardPropsWithHover extends CardProps {
+  /** Disables the lift-on-hover treatment (used for static panels). */
+  flat?: boolean
+}
+
+/**
+ * The single surface primitive — every panel on the site is one of these.
+ *
+ * The hover lift lives in a CSS class rather than in style props: transitions
+ * and `:hover` are not expressible through react-native-web styles.
+ */
+export function Card({
+  children,
+  highlight,
+  padding = 22,
+  style,
+  flat,
+}: CardPropsWithHover) {
+  const body = (
+    <View style={[styles.card, { padding }, highlight && styles.cardHighlight, style]}>
       {highlight ? <View style={styles.topEdge} /> : null}
       {children}
     </View>
   )
+
+  if (flat) return body
+
+  return <div className="ngc-card">{body}</div>
 }
 
 const styles = StyleSheet.create({

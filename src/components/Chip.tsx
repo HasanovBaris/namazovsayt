@@ -3,12 +3,14 @@ import { colors } from '../theme/colors'
 import { fonts } from '../theme/typography'
 import { layout } from '../theme/layout'
 
-/** Small pill used for the game list. */
+/** Small pill used for the game list. Lifts on hover via the CSS class. */
 export function Chip({ label }: { label: string }) {
   return (
-    <View style={styles.chip}>
-      <Text style={styles.label}>{label}</Text>
-    </View>
+    <div className="ngc-chip">
+      <View style={styles.chip}>
+        <Text style={styles.label}>{label}</Text>
+      </View>
+    </div>
   )
 }
 

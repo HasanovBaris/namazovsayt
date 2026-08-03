@@ -117,6 +117,15 @@ export const az = {
     rights: 'Bütün hüquqlar qorunur.',
   },
 
+  /** Fırlanan lentdəki qısa ifadələr. */
+  ticker: {
+    hour: 'saat',
+    rigs: 'simulyator',
+    until: 'Gecə',
+    noAgeLimit: 'Yaş həddi yoxdur',
+    forceFeedback: 'Geri qaytarma qüvvəsi',
+  },
+
   a11y: {
     language: 'Dil',
     menu: 'Menyu',

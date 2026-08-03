@@ -3,6 +3,7 @@ import { useI18n } from '../i18n'
 import { site } from '../data/content'
 import { Section } from '../components/Section'
 import { Chip } from '../components/Chip'
+import { Reveal } from '../components/Reveal'
 import { colors } from '../theme/colors'
 import { typeScale } from '../theme/typography'
 
@@ -17,13 +18,15 @@ export function Games() {
       lead={t.games.lead}
       alt
     >
-      <View style={styles.chips}>
-        {site.games.map((game) => (
-          <Chip key={game} label={game} />
-        ))}
-      </View>
+      <Reveal>
+        <View style={styles.chips}>
+          {site.games.map((game) => (
+            <Chip key={game} label={game} />
+          ))}
+        </View>
 
-      <Text style={styles.note}>{t.games.note}</Text>
+        <Text style={styles.note}>{t.games.note}</Text>
+      </Reveal>
     </Section>
   )
 }

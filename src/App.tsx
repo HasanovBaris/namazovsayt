@@ -2,6 +2,8 @@ import { StyleSheet, View } from 'react-native'
 import { I18nProvider } from './i18n'
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
+import { Marquee } from './components/Marquee'
+import { ScrollProgress } from './components/ScrollProgress'
 import { Hero } from './sections/Hero'
 import { About } from './sections/About'
 import { Rigs } from './sections/Rigs'
@@ -16,12 +18,15 @@ export default function App() {
   return (
     <I18nProvider>
       <View style={styles.page}>
+        <ScrollProgress />
         <Header />
         <Hero />
+        <Marquee />
         <About />
         <Rigs />
         <Games />
         <Pricing />
+        <Marquee />
         <Branches />
         <Gallery />
         <Contact />

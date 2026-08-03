@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, useWindowDimensions } from 'react-native'
 import { colors } from '../theme/colors'
 import { typeScale } from '../theme/typography'
 import { breakpoints, layout } from '../theme/layout'
+import { Reveal } from './Reveal'
 
 interface SectionProps {
   /** Anchor id — the header nav links to this. */
@@ -37,24 +38,28 @@ export function Section({ id, kicker, title, lead, alt, children }: SectionProps
       ]}
     >
       <View style={styles.column}>
-        <View style={styles.header}>
-          <View style={styles.kickerRow}>
-            <View style={styles.kickerBar} />
-            <Text style={styles.kicker}>{kicker}</Text>
+        <Reveal>
+          <View style={styles.header}>
+            <View style={styles.kickerRow}>
+              <View style={styles.kickerBar} />
+              <Text style={styles.kicker}>{kicker}</Text>
+            </View>
+
+            <Text
+              role="heading"
+              aria-level={2}
+              style={[styles.title, { fontSize: isDesktop ? 38 : 28 }]}
+            >
+              {title}
+            </Text>
+
+            {lead ? (
+              <Text style={[styles.lead, { fontSize: isDesktop ? 17 : 15 }]}>
+                {lead}
+              </Text>
+            ) : null}
           </View>
-
-          <Text
-            role="heading"
-            aria-level={2}
-            style={[styles.title, { fontSize: isDesktop ? 38 : 28 }]}
-          >
-            {title}
-          </Text>
-
-          {lead ? (
-            <Text style={[styles.lead, { fontSize: isDesktop ? 17 : 15 }]}>{lead}</Text>
-          ) : null}
-        </View>
+        </Reveal>
 
         {children}
       </View>

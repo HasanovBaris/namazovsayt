@@ -3,6 +3,7 @@ import { useI18n } from '../i18n'
 import { site } from '../data/content'
 import { Section } from '../components/Section'
 import { Card } from '../components/Card'
+import { Reveal } from '../components/Reveal'
 import { CheckIcon } from '../components/Icon'
 import { colors } from '../theme/colors'
 import { fonts, typeScale } from '../theme/typography'
@@ -22,13 +23,16 @@ export function Pricing() {
 
   return (
     <Section id="pricing" kicker={t.pricing.kicker} title={t.pricing.title}>
+      <Reveal>
       <Card highlight padding={isDesktop ? 36 : 24}>
         <View style={isDesktop && styles.row}>
           <View style={[styles.priceBlock, isDesktop && styles.priceBlockDesktop]}>
             <View style={styles.amountRow}>
-              <Text style={[styles.amount, { fontSize: isDesktop ? 86 : 64 }]}>
-                {site.price.hour}
-              </Text>
+              <span className="ngc-grad">
+                <Text style={[styles.amount, { fontSize: isDesktop ? 96 : 68 }]}>
+                  {site.price.hour}
+                </Text>
+              </span>
               <Text style={[styles.currency, { fontSize: isDesktop ? 40 : 30 }]}>
                 {site.price.currency}
               </Text>
@@ -51,6 +55,7 @@ export function Pricing() {
 
         <Text style={styles.note}>{t.pricing.note}</Text>
       </Card>
+      </Reveal>
     </Section>
   )
 }

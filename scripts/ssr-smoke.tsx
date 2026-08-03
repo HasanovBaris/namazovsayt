@@ -48,6 +48,14 @@ const expected: [label: string, needle: string][] = [
   // `&` is escaped in attribute output, so compare against the escaped form.
   ['map link', site.branches[0].mapUrl.replace(/&/g, '&amp;')],
   ['footer tagline', az.footer.tagline],
+  // Motion layer — these are plain CSS classes, so assert they reach the markup.
+  ['scroll reveal wrappers', 'ngc-reveal'],
+  ['card hover wrappers', 'ngc-card'],
+  ['gradient headline', 'ngc-grad'],
+  ['ticker strip', 'ngc-marquee-track'],
+  ['ticker copy', az.ticker.noAgeLimit],
+  ['animated speed lines', 'ngc-streaks'],
+  ['scroll progress bar', 'ngc-progress'],
 ]
 
 /**

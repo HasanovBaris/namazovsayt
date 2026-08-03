@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { StyleSheet, Text, View, useWindowDimensions } from 'react-native'
 import { useI18n } from '../i18n'
 import { colors } from '../theme/colors'
@@ -18,6 +19,15 @@ export function Header() {
   const { width } = useWindowDimensions()
   const isDesktop = width >= breakpoints.md
   const showNav = width >= breakpoints.lg
+  const [scrolled, setScrolled] = useState(false)
+
+  // Past the fold the bar goes opaque, so text never sits on moving artwork.
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24)
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
   const links = [
     { href: '#about', label: t.nav.about },
@@ -34,10 +44,13 @@ export function Header() {
         position: 'sticky',
         top: 0,
         zIndex: 100,
-        backgroundColor: 'rgba(10, 11, 13, 0.85)',
-        backdropFilter: 'saturate(160%) blur(12px)',
-        WebkitBackdropFilter: 'saturate(160%) blur(12px)',
-        borderBottom: `1px solid ${colors.border}`,
+        backgroundColor: scrolled ? 'rgba(10, 11, 13, 0.92)' : 'rgba(10, 11, 13, 0.4)',
+        backdropFilter: 'saturate(170%) blur(14px)',
+        WebkitBackdropFilter: 'saturate(170%) blur(14px)',
+        borderBottom: `1px solid ${scrolled ? colors.border : 'transparent'}`,
+        boxShadow: scrolled ? '0 10px 30px -18px rgba(0,0,0,0.9)' : 'none',
+        transition:
+          'background-color .3s ease, border-color .3s ease, box-shadow .3s ease',
       }}
     >
       <View

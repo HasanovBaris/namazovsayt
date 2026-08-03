@@ -7,10 +7,15 @@ import { colors } from '../theme/colors'
 import { fonts, typeScale } from '../theme/typography'
 import { breakpoints, layout } from '../theme/layout'
 
-/** Diagonal light streaks behind the headline — the only decoration on the page. */
+/**
+ * The moving backdrop: a breathing glow, a faint perspective grid, and four
+ * light streaks that drift across at different speeds. All CSS animation —
+ * no JavaScript runs per frame.
+ */
 function SpeedLines() {
   return (
     <svg
+      className="ngc-streaks"
       viewBox="0 0 1200 700"
       preserveAspectRatio="xMidYMid slice"
       aria-hidden="true"
@@ -25,18 +30,38 @@ function SpeedLines() {
       <defs>
         <linearGradient id="ngc-streak" x1="0" y1="0" x2="1" y2="0">
           <stop offset="0%" stopColor={colors.accent} stopOpacity="0" />
-          <stop offset="55%" stopColor={colors.accent} stopOpacity="0.55" />
+          <stop offset="50%" stopColor={colors.accent} stopOpacity="0.7" />
           <stop offset="100%" stopColor={colors.accent} stopOpacity="0" />
         </linearGradient>
-        <radialGradient id="ngc-glow" cx="0.22" cy="0.35" r="0.6">
-          <stop offset="0%" stopColor={colors.accent} stopOpacity="0.14" />
+        <radialGradient id="ngc-glow" cx="0.2" cy="0.34" r="0.62">
+          <stop offset="0%" stopColor={colors.accent} stopOpacity="0.2" />
           <stop offset="100%" stopColor={colors.accent} stopOpacity="0" />
         </radialGradient>
+        <radialGradient id="ngc-glow2" cx="0.85" cy="0.8" r="0.5">
+          <stop offset="0%" stopColor={colors.amber} stopOpacity="0.1" />
+          <stop offset="100%" stopColor={colors.amber} stopOpacity="0" />
+        </radialGradient>
+        <linearGradient id="ngc-fade" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor={colors.borderHi} stopOpacity="0" />
+          <stop offset="100%" stopColor={colors.borderHi} stopOpacity="0.55" />
+        </linearGradient>
       </defs>
 
-      <rect width="1200" height="700" fill="url(#ngc-glow)" />
+      <rect className="ngc-glow" width="1200" height="700" fill="url(#ngc-glow)" />
+      <rect width="1200" height="700" fill="url(#ngc-glow2)" />
 
-      <g stroke="url(#ngc-streak)" strokeWidth="1.5">
+      {/* Perspective floor lines converging on a vanishing point. */}
+      <g stroke="url(#ngc-fade)" strokeWidth="1">
+        {[-900, -560, -260, 0, 260, 560, 900, 1400, 2100].map((x) => (
+          <line key={x} x1={600 + x} y1="700" x2="600" y2="330" />
+        ))}
+        <line x1="0" y1="620" x2="1200" y2="620" />
+        <line x1="0" y1="545" x2="1200" y2="545" />
+        <line x1="0" y1="490" x2="1200" y2="490" />
+        <line x1="0" y1="450" x2="1200" y2="450" />
+      </g>
+
+      <g stroke="url(#ngc-streak)" strokeWidth="1.6">
         <line x1="-100" y1="120" x2="700" y2="-60" />
         <line x1="-100" y1="300" x2="900" y2="70" />
         <line x1="200" y1="720" x2="1300" y2="440" />
@@ -69,21 +94,22 @@ export function Hero() {
 
       <View style={styles.column}>
         <View style={styles.kickerRow}>
-          <View style={styles.dot} />
+          <div className="ngc-blink" style={{ display: 'flex', borderRadius: 999 }}>
+            <View style={styles.dot} />
+          </div>
           <Text style={styles.kicker}>{t.hero.kicker}</Text>
         </View>
 
-        <Text
-          role="heading"
-          aria-level={1}
-          style={[styles.title, { fontSize: titleSize }]}
-        >
-          {t.hero.titleTop}
-          {'\n'}
-          <Text style={[styles.title, styles.titleAccent, { fontSize: titleSize }]}>
-            {t.hero.titleBottom}
+        <View role="heading" aria-level={1}>
+          <Text style={[styles.title, { fontSize: titleSize }]}>
+            {t.hero.titleTop}
           </Text>
-        </Text>
+          <span className="ngc-grad">
+            <Text style={[styles.title, { fontSize: titleSize }]}>
+              {t.hero.titleBottom}
+            </Text>
+          </span>
+        </View>
 
         <Text style={[styles.lead, { fontSize: isDesktop ? 18 : 15 }]}>
           {t.hero.lead}
@@ -144,9 +170,6 @@ const styles = StyleSheet.create({
     color: colors.text,
     letterSpacing: -1.5,
     lineHeight: '1.05',
-  },
-  titleAccent: {
-    color: colors.accent,
   },
   lead: {
     ...typeScale.body,
