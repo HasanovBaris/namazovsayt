@@ -12,6 +12,10 @@ export default defineConfig(({ mode }) => ({
   define: {
     __DEV__: JSON.stringify(mode !== 'production'),
   },
+  server: {
+    // `npm run dev` dərhal brauzerdə səhifəni açsın.
+    open: true,
+  },
   build: {
     target: 'es2020',
     cssCodeSplit: false,
