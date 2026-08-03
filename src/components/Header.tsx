@@ -106,9 +106,9 @@ const styles = StyleSheet.create({
   navLabel: {
     fontFamily: fonts.display,
     fontWeight: '600',
-    fontSize: 14,
-    letterSpacing: 0.2,
-    color: colors.textDim,
-    marginHorizontal: 13,
+    fontSize: 17,
+    letterSpacing: 0.3,
+    color: colors.text,
+    marginHorizontal: 18,
   },
 })

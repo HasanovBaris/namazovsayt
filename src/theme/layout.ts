@@ -6,7 +6,7 @@ export const layout = {
   radius: 16,
   radiusSm: 10,
   radiusPill: 999,
-  headerHeight: 64,
+  headerHeight: 76,
 } as const
 
 export const breakpoints = {
