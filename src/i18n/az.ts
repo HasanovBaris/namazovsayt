@@ -31,7 +31,7 @@ export const az = {
     title: 'Trek həmişə açıqdır',
     p1: 'Namazov Game Center yalnız yarış simulyatorlarına həsr olunmuş klubdur. Hər kokpit tam quraşdırılmış dəstdir: geri qaytarma qüvvəli direksiyon, üç pedal, geniş ekran və oyunu bir saniyə də ləngitməyən kompüter.',
     p2: 'İlk dəfə gəlirsənsə narahat olma — ayarları sənə uyğunlaşdırırıq, trek seçirik, ilk dövrələrdə yanında dururuq. Təcrübən varsa, vaxtını götür və öz rekordunu qov.',
-    statRigs: 'Yarış kokpiti',
+    statRigs: 'Yarış masası',
     statPrice: 'Bir saat',
     statClose: 'Gecə bağlanış',
     statAge: 'Yaş həddi',
@@ -60,6 +60,7 @@ export const az = {
     kicker: 'Oyunlar',
     title: 'Nə sürəcəksən',
     lead: 'Ciddi simulyatordan rahat arcade-ə qədər — hansı tərz xoşuna gəlirsə.',
+    more: 'Həmçinin oynanılır',
     note: 'Siyahı daim yenilənir. Xüsusi oyun istəyirsənsə, gələndə de — baxaq.',
   },
 
@@ -78,26 +79,28 @@ export const az = {
   branches: {
     kicker: 'Filiallar',
     title: 'Bizi harada tapacaqsan',
-    lead: 'İki nöqtə — Xırdalanda əsas klub, Bakının Nərimanov rayonunda ikinci filial.',
-    mainTag: 'Əsas filial',
-    branchTag: 'Filial',
+    lead: 'İki filial — biri Bakıda Nərimanov rayonunda, biri Xırdalanda. Hər ikisi eyni qiymət, eyni saatlarla işləyir.',
     addressLabel: 'Ünvan',
     phoneLabel: 'Telefon',
     hoursLabel: 'İş saatı',
-    rigsLabel: 'kokpit',
+    rigsLabel: 'yarış masası',
     mapAction: 'Xəritədə aç',
     phoneSoon: 'Tezliklə əlavə olunacaq',
     everyDay: 'Hər gün',
     xirdalanName: 'Xırdalan',
-    xirdalanAddress: 'Qalubiyyə küçəsi, Xırdalan, Abşeron',
+    xirdalanAddress: 'Qalubiyyə 60, Xırdalan',
     nerimanovName: 'Nərimanov',
-    nerimanovAddress: 'Nərimanov rayonu, Bakı',
+    nerimanovAddress: 'Gülarə Qədirbəyova 14, Bakı',
   },
 
   gallery: {
     kicker: 'Qalereya',
     title: 'Klubun içi',
     soon: 'Şəkillər tezliklə əlavə olunacaq. Hələlik ən yeni görüntülərə Instagram və TikTok-da baxa bilərsən.',
+    alt: {
+      simHall: 'Namazov Game Center-in zalı — sıra ilə düzülmüş yarış masaları və oyunçular',
+      cockpitRow: 'Yarış masasında oyunçu — sükan, pedallar və iki ekran',
+    },
   },
 
   contact: {
@@ -120,7 +123,7 @@ export const az = {
   /** Fırlanan lentdəki qısa ifadələr. */
   ticker: {
     hour: 'saat',
-    rigs: 'simulyator',
+    rigs: 'yarış masası',
     until: 'Gecə',
     noAgeLimit: 'Yaş həddi yoxdur',
     forceFeedback: 'Geri qaytarma qüvvəsi',

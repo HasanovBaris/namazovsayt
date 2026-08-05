@@ -71,6 +71,54 @@ function SpeedLines() {
   )
 }
 
+/**
+ * The club's own hall, sunk behind the type.
+ *
+ * Two scrims do the work: a vertical one that fades the photo into the page
+ * top and bottom, and a horizontal one that keeps the left-aligned headline on
+ * near-solid background while the room stays visible on the right.
+ */
+function HallBackdrop() {
+  return (
+    <div
+      aria-hidden="true"
+      style={{
+        position: 'absolute',
+        inset: 0,
+        overflow: 'hidden',
+        pointerEvents: 'none',
+      }}
+    >
+      <img
+        src={site.heroPhoto}
+        alt=""
+        style={{
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+          objectPosition: '50% 38%',
+          opacity: 0.34,
+          display: 'block',
+        }}
+      />
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          backgroundImage: `linear-gradient(180deg, ${colors.bg} 0%, rgba(10,11,13,0.45) 40%, rgba(10,11,13,0.85) 80%, ${colors.bg} 100%)`,
+        }}
+      />
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          backgroundImage: `linear-gradient(90deg, ${colors.bg} 0%, rgba(10,11,13,0.74) 45%, rgba(10,11,13,0.15) 100%)`,
+        }}
+      />
+    </div>
+  )
+}
+
 export function Hero() {
   const { t } = useI18n()
   const { width, height } = useWindowDimensions()
@@ -90,6 +138,7 @@ export function Hero() {
         },
       ]}
     >
+      <HallBackdrop />
       <SpeedLines />
 
       <View style={styles.column}>
@@ -147,6 +196,9 @@ const styles = StyleSheet.create({
   column: {
     width: '100%',
     maxWidth: layout.maxWidth,
+    /* Lifts the type above the absolutely-positioned backdrop layers. */
+    position: 'relative',
+    zIndex: 1,
   },
   kickerRow: {
     flexDirection: 'row',

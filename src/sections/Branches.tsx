@@ -53,19 +53,15 @@ function BranchCard({ branch }: { branch: Branch }) {
   const phoneUnknown = isPlaceholderPhone(branch.phone)
 
   return (
-    <Card highlight={branch.isMain} padding={24}>
+    <Card padding={24}>
       <View style={styles.head}>
         <Text style={styles.name}>{place.name}</Text>
-        <View style={[styles.tag, branch.isMain && styles.tagMain]}>
-          <Text style={[styles.tagText, branch.isMain && styles.tagTextMain]}>
-            {branch.isMain ? t.branches.mainTag : t.branches.branchTag}
+        <View style={styles.tag}>
+          <Text style={styles.tagText}>
+            {branch.rigCount} {t.branches.rigsLabel}
           </Text>
         </View>
       </View>
-
-      <Text style={styles.rigCount}>
-        {branch.rigCount} {t.branches.rigsLabel}
-      </Text>
 
       <View style={styles.details}>
         <DetailRow
@@ -138,6 +134,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
+    /* "25 yarış masası" is a long pill — let it drop below the name on a
+       narrow card rather than squeezing either one. */
+    flexWrap: 'wrap',
   },
   name: {
     fontFamily: fonts.display,
@@ -145,6 +144,7 @@ const styles = StyleSheet.create({
     fontSize: 26,
     letterSpacing: -0.6,
     color: colors.text,
+    marginRight: 12,
   },
   tag: {
     borderWidth: 1,
@@ -152,10 +152,7 @@ const styles = StyleSheet.create({
     borderRadius: layout.radiusPill,
     paddingVertical: 4,
     paddingHorizontal: 10,
-  },
-  tagMain: {
-    borderColor: colors.accentEdge,
-    backgroundColor: colors.accentSoft,
+    marginTop: 4,
   },
   tagText: {
     fontFamily: fonts.display,
@@ -163,15 +160,7 @@ const styles = StyleSheet.create({
     fontSize: 11,
     letterSpacing: 1,
     textTransform: 'uppercase',
-    color: colors.textFaint,
-  },
-  tagTextMain: {
-    color: colors.accent,
-  },
-  rigCount: {
-    ...typeScale.small,
     color: colors.textDim,
-    marginTop: 6,
   },
   details: {
     marginTop: 22,

@@ -27,7 +27,7 @@ export const en: Dict = {
     title: 'The track is always open',
     p1: 'Namazov Game Center is a club built around racing simulators and nothing else. Every cockpit is a complete rig: a force feedback wheel, three pedals, a wide display, and a PC that never drops a frame.',
     p2: 'First time here? We will set the rig up for you, pick a track, and stay beside you for the opening laps. Already experienced? Take your time and chase your own record.',
-    statRigs: 'Racing cockpits',
+    statRigs: 'Racing rigs',
     statPrice: 'Per hour',
     statClose: 'Closing time',
     statAge: 'Age limit',
@@ -56,6 +56,7 @@ export const en: Dict = {
     kicker: 'Games',
     title: 'What you can drive',
     lead: 'From serious simulation to relaxed arcade — pick whichever style suits you.',
+    more: 'Also playable',
     note: 'The library keeps growing. Want a specific title? Mention it when you come in.',
   },
 
@@ -74,26 +75,28 @@ export const en: Dict = {
   branches: {
     kicker: 'Locations',
     title: 'Where to find us',
-    lead: 'Two venues — the main club in Khirdalan and a second one in the Narimanov district of Baku.',
-    mainTag: 'Main venue',
-    branchTag: 'Second venue',
+    lead: 'Two venues — one in the Narimanov district of Baku, one in Khirdalan. Same prices, same hours at both.',
     addressLabel: 'Address',
     phoneLabel: 'Phone',
     hoursLabel: 'Opening hours',
-    rigsLabel: 'cockpits',
+    rigsLabel: 'racing rigs',
     mapAction: 'Open in maps',
     phoneSoon: 'Coming soon',
     everyDay: 'Every day',
     xirdalanName: 'Khirdalan',
-    xirdalanAddress: 'Qalubiyya street, Khirdalan, Absheron',
+    xirdalanAddress: '60 Qalubiyya St, Khirdalan',
     nerimanovName: 'Narimanov',
-    nerimanovAddress: 'Narimanov district, Baku',
+    nerimanovAddress: '14 Gulara Qadirbayova St, Baku',
   },
 
   gallery: {
     kicker: 'Gallery',
     title: 'Inside the club',
     soon: 'Photos are coming soon. In the meantime, the latest footage is on Instagram and TikTok.',
+    alt: {
+      simHall: 'The Namazov Game Center hall — a row of racing rigs with players at the wheel',
+      cockpitRow: 'A player at a racing rig — wheel, pedals and two screens',
+    },
   },
 
   contact: {
@@ -115,7 +118,7 @@ export const en: Dict = {
 
   ticker: {
     hour: 'hour',
-    rigs: 'simulators',
+    rigs: 'racing rigs',
     until: 'Open until',
     noAgeLimit: 'No age limit',
     forceFeedback: 'Force feedback',

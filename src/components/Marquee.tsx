@@ -15,7 +15,7 @@ export function Marquee() {
 
   const items = [
     `${site.price.hour} ${site.price.currency} / ${t.ticker.hour}`,
-    `${site.totalRigs}+ ${t.ticker.rigs}`,
+    `${site.totalRigs} ${t.ticker.rigs}`,
     `${t.ticker.until} ${site.hours.close}`,
     t.ticker.noAgeLimit,
     t.branches.xirdalanName,

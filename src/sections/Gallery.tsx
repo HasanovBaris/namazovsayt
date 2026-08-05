@@ -10,7 +10,7 @@ import { layout } from '../theme/layout'
 /** Placeholder tile shown until real photos land in `site.gallery`. */
 function EmptyTile({ index }: { index: number }) {
   return (
-    <View style={styles.tile}>
+    <View style={[styles.tile, styles.tileEmpty]}>
       <svg
         viewBox="0 0 100 70"
         aria-hidden="true"
@@ -33,22 +33,27 @@ export function Gallery() {
 
   return (
     <Section id="gallery" kicker={t.gallery.kicker} title={t.gallery.title}>
-      <Grid maxColumns={3} gap={12}>
+      {/* The club photos are shot vertically, so they run two-up rather than
+          three-up — three portrait tiles on one row leaves them postage-stamp
+          sized on a wide screen. */}
+      <Grid maxColumns={2} gap={14}>
         {photos.length > 0
           ? photos.map((photo) => (
-              <View key={photo.src} style={styles.tile}>
-                <img
-                  src={photo.src}
-                  alt={photo.alt}
-                  loading="lazy"
-                  style={{
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'cover',
-                    display: 'block',
-                  }}
-                />
-              </View>
+              <div key={photo.src} className="ngc-card ngc-photo">
+                <View style={styles.tile}>
+                  <img
+                    src={photo.src}
+                    alt={t.gallery.alt[photo.id]}
+                    loading="lazy"
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover',
+                      display: 'block',
+                    }}
+                  />
+                </View>
+              </div>
             ))
           : [0, 1, 2, 3, 4, 5].map((index) => (
               <EmptyTile key={index} index={index} />
@@ -63,12 +68,16 @@ export function Gallery() {
 const styles = StyleSheet.create({
   tile: {
     width: '100%',
-    aspectRatio: 10 / 7,
-    borderRadius: layout.radiusSm,
+    aspectRatio: 4 / 5,
+    borderRadius: layout.radius,
     borderWidth: 1,
     borderColor: colors.border,
     overflow: 'hidden',
     backgroundColor: colors.surface,
+  },
+  tileEmpty: {
+    aspectRatio: 10 / 7,
+    borderRadius: layout.radiusSm,
   },
   soon: {
     ...typeScale.small,

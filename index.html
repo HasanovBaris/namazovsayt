@@ -140,6 +140,30 @@
         border-color: rgba(255, 46, 23, 0.42);
       }
 
+      /* ── Game logos sit back until you look at them ───────────────── */
+      .ngc-logo img {
+        opacity: 0.82;
+        transition:
+          opacity 0.28s ease,
+          transform 0.28s cubic-bezier(0.22, 0.61, 0.24, 1);
+      }
+      .ngc-logo:hover img {
+        opacity: 1;
+        transform: scale(1.05);
+      }
+
+      /* ── Gallery photos warm up on hover ──────────────────────────── */
+      .ngc-photo img {
+        filter: saturate(0.9) brightness(0.92);
+        transition:
+          filter 0.35s ease,
+          transform 0.5s cubic-bezier(0.22, 0.61, 0.24, 1);
+      }
+      .ngc-photo:hover img {
+        filter: none;
+        transform: scale(1.04);
+      }
+
       .ngc-chip {
         transition: transform 0.2s ease;
       }

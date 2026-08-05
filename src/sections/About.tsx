@@ -26,7 +26,7 @@ export function About() {
   const isDesktop = width >= breakpoints.md
 
   const stats = [
-    { value: `${site.totalRigs}+`, label: t.about.statRigs },
+    { value: `${site.totalRigs}`, label: t.about.statRigs },
     { value: `${site.price.hour} ${site.price.currency}`, label: t.about.statPrice },
     { value: site.hours.close, label: t.about.statClose },
     { value: t.about.statAgeValue, label: t.about.statAge },

@@ -13,11 +13,9 @@ export type BranchId = 'xirdalan' | 'nerimanov'
 
 export interface Branch {
   id: BranchId
-  /** Əsas filial siyahıda birinci gəlir və "əsas" nişanı alır. */
-  isMain: boolean
-  /** ⚠️ TODO — Instagram bio-dakı real nömrə ilə əvəz et. */
+  /** Təsdiqlənib. */
   phone: string
-  /** Neçə simulyator var (təxmini). ⚠️ TODO */
+  /** Neçə yarış masası var. Təsdiqlənib. */
   rigCount: number
   /** Google Maps axtarış linki. Dəqiq pin olanda düz koordinat linkini qoy. */
   mapUrl: string
@@ -27,6 +25,19 @@ export interface RigSpec {
   id: 'wheel' | 'pedals' | 'display' | 'seat' | 'pc' | 'audio'
   /** Tərcümə olunmayan texniki dəyər. ⚠️ TODO — real avadanlıqla əvəz et. */
   value: string
+}
+
+export interface Game {
+  /** Oyunun adı — tərcümə olunmur. */
+  name: string
+  /** `public/media/games` içindəki logo. Logosu olmayan oyun yazı kimi görünür. */
+  logo?: string
+}
+
+export interface Photo {
+  /** Alt mətni `t.gallery.alt[id]` açarından gəlir. */
+  id: 'simHall' | 'cockpitRow'
+  src: string
 }
 
 export const site = {
@@ -49,8 +60,8 @@ export const site = {
     everyDay: true,
   },
 
-  /** Hər iki filialda cəmi simulyator sayı (təxmini). ⚠️ TODO */
-  totalRigs: 15,
+  /** Hər iki filialda cəmi yarış masası: 25 + 9. */
+  totalRigs: 34,
 
   /** Yaş həddi yoxdur — təsdiqlənib. */
   hasAgeLimit: false,
@@ -64,20 +75,18 @@ export const site = {
 
   branches: [
     {
-      id: 'xirdalan',
-      isMain: true,
-      phone: '+994 __ ___ __ __', // ⚠️ TODO
-      rigCount: 9, // ⚠️ TODO
+      id: 'nerimanov',
+      phone: '+994 55 479 72 02',
+      rigCount: 25,
       mapUrl:
-        'https://www.google.com/maps/search/?api=1&query=Namazov+Game+Center+Xirdalan',
+        'https://www.google.com/maps/search/?api=1&query=Namazov+Game+Center+Gulara+Qadirbayova+14+Baku',
     },
     {
-      id: 'nerimanov',
-      isMain: false,
-      phone: '+994 __ ___ __ __', // ⚠️ TODO
-      rigCount: 6, // ⚠️ TODO
+      id: 'xirdalan',
+      phone: '+994 55 479 72 01',
+      rigCount: 9,
       mapUrl:
-        'https://www.google.com/maps/search/?api=1&query=Namazov+Game+Center+2+Nerimanov+Baku',
+        'https://www.google.com/maps/search/?api=1&query=Namazov+Game+Center+Qalubiyya+60+Khirdalan',
     },
   ] satisfies Branch[],
 
@@ -94,22 +103,39 @@ export const site = {
     { id: 'audio', value: '7.1 qulaqlıq' },
   ] satisfies RigSpec[],
 
-  /** Klubda mövcud oyunlar. ⚠️ TODO — siyahını dəqiqləşdir. */
+  /**
+   * Klubda mövcud oyunlar. Logosu olanlar yuxarıda lövhə kimi,
+   * qalanları altda yazı kimi görünür. ⚠️ TODO — siyahını dəqiqləşdir.
+   */
   games: [
-    'Assetto Corsa',
-    'Assetto Corsa Competizione',
-    'F1 25',
-    'Forza Horizon 5',
-    'EA Sports WRC',
-    'BeamNG.drive',
-    'Euro Truck Simulator 2',
-    'CarX Drift Racing',
-    'iRacing',
-    'Need for Speed',
-  ],
+    { name: 'Assetto Corsa', logo: '/media/games/assetto-corsa.png' },
+    { name: 'Forza Horizon 5', logo: '/media/games/forza-horizon-5.png' },
+    { name: 'Grand Theft Auto V', logo: '/media/games/grand-theft-auto-v.png' },
+    {
+      name: 'Euro Truck Simulator 2',
+      logo: '/media/games/euro-truck-simulator-2.png',
+    },
+    {
+      name: 'American Truck Simulator',
+      logo: '/media/games/american-truck-simulator.png',
+    },
+    { name: 'Assetto Corsa Competizione' },
+    { name: 'F1 25' },
+    { name: 'EA Sports WRC' },
+    { name: 'BeamNG.drive' },
+    { name: 'CarX Drift Racing' },
+    { name: 'iRacing' },
+    { name: 'Need for Speed' },
+  ] satisfies Game[],
 
   /** Qalereya şəkilləri. Boş qalsa bölmə "tezliklə" göstərir. */
-  gallery: [] as { src: string; alt: string }[],
+  gallery: [
+    { id: 'simHall', src: '/media/photos/sim-hall.jpg' },
+    { id: 'cockpitRow', src: '/media/photos/cockpit-row.jpg' },
+  ] satisfies Photo[],
+
+  /** Hero-nun arxa fonu — qalereyadakı şəkillərdən biri təkrar işlədilir. */
+  heroPhoto: '/media/photos/sim-hall.jpg',
 } as const
 
 /** `tel:` linki üçün nömrədən boşluq və işarələri təmizləyir. */
