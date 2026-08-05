@@ -47,7 +47,7 @@ export const az = {
     pedalsLabel: 'Pedallar',
     pedalsDesc: 'Qaz, əyləc, mufta və əl ilə sürət qutusu.',
     displayLabel: 'Ekran',
-    displayDesc: 'Yüksək təzələnmə tezliyi — sürətdə görüntü dağılmır.',
+    displayDesc: 'Yüksək təzələnmə tezliyi, sürətdə görüntü dağılmır.',
     seatLabel: 'Oturacaq',
     seatDesc: 'Keyfiyyətli və yumşaq materiallar ilə maksimum rahatlıq.',
     pcLabel: 'Kompüter',
