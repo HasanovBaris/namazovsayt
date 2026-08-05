@@ -160,9 +160,11 @@ export function Hero() {
           </span>
         </View>
 
-        <Text style={[styles.lead, { fontSize: isDesktop ? 18 : 15 }]}>
-          {t.hero.lead}
-        </Text>
+        {!!t.hero.lead && (
+          <Text style={[styles.lead, { fontSize: isDesktop ? 18 : 15 }]}>
+            {t.hero.lead}
+          </Text>
+        )}
 
         <View style={styles.badges}>
           <Badge
@@ -173,10 +175,6 @@ export function Hero() {
           <Badge
             icon={<PinIcon size={16} color={colors.textDim} />}
             label={t.hero.badgeBranches}
-          />
-          <Badge
-            icon={<ClockIcon size={16} color={colors.textDim} />}
-            label={`${t.hero.badgeHoursPrefix} ${site.hours.close}${t.hero.badgeHoursSuffix}`}
           />
         </View>
       </View>

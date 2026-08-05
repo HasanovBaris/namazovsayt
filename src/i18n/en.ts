@@ -15,7 +15,7 @@ export const en: Dict = {
     kicker: 'Racing simulator club',
     titleTop: 'High speed,',
     titleBottom: 'no penalty for drifting',
-    lead: 'Racing cockpits in Khirdalan and Narimanov. Force feedback wheels, three pedals, high-spec PCs — sit down and feel the track.',
+    lead: '',
     badgeHourSuffix: '1 hour',
     badgeBranches: '2 locations',
     badgeHoursPrefix: 'Open until',
@@ -30,8 +30,8 @@ export const en: Dict = {
     statRigs: 'Racing rigs',
     statPrice: 'Per hour',
     statClose: 'Closing time',
-    statAge: 'Age limit',
-    statAgeValue: 'None',
+    statAge: 'Minimum age',
+    statAgeValue: '12+',
   },
 
   rigs: {
@@ -68,7 +68,7 @@ export const en: Dict = {
     include1: 'The cockpit and all equipment',
     include2: 'Any game and any track',
     include3: 'First time — setup and a walkthrough',
-    include4: 'No age restriction',
+    include4: 'Minimum age limit: 12+',
     note: 'No prepayment. You choose your time when you arrive.',
   },
 
@@ -119,9 +119,9 @@ export const en: Dict = {
   ticker: {
     hour: 'hour',
     rigs: 'racing rigs',
-    until: 'Open until',
-    noAgeLimit: 'No age limit',
-    forceFeedback: 'Force feedback',
+    noAgeLimit: '12+ age limit',
+    proSimulator: 'Professional racing simulator',
+    wideGameSelection: 'Wide selection of games',
   },
 
   a11y: {

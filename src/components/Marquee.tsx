@@ -16,11 +16,11 @@ export function Marquee() {
   const items = [
     `${site.price.hour} ${site.price.currency} / ${t.ticker.hour}`,
     `${site.totalRigs} ${t.ticker.rigs}`,
-    `${t.ticker.until} ${site.hours.close}`,
+    t.ticker.proSimulator,
+    t.ticker.wideGameSelection,
     t.ticker.noAgeLimit,
     t.branches.xirdalanName,
     t.branches.nerimanovName,
-    t.ticker.forceFeedback,
   ]
 
   const sequence = [...items, ...items]

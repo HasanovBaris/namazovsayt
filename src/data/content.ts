@@ -66,8 +66,8 @@ export const site = {
   /** Hər iki filialda cəmi yarış masası: 16 + 9. */
   totalRigs: 25,
 
-  /** Yaş həddi yoxdur — təsdiqlənib. */
-  hasAgeLimit: false,
+  /** Minimum yaş həddi: 12+. */
+  minAge: '12+',
 
   social: {
     instagram: 'https://www.instagram.com/namazovgamecenter/',
@@ -98,12 +98,12 @@ export const site = {
    * real avadanlıqla əvəz olunmalıdır.
    */
   rigs: [
-    { id: 'wheel', value: 'Logitech G923 · 900°' },
+    { id: 'wheel', value: 'Logitech G29 · 900°' },
     { id: 'pedals', value: '3 pedal + H-shifter' },
     { id: 'display', value: '32" · 165 Hz' },
-    { id: 'seat', value: 'Tam yarış kokpiti' },
+    { id: 'seat', value: 'AndaSeat Chair Luna / 2E Gaming Chair BASAN Black/Red' },
     { id: 'pc', value: 'RTX 4060 · 32 GB RAM' },
-    { id: 'audio', value: '7.1 qulaqlıq' },
+    { id: 'audio', value: 'HyperX Cloud III' },
   ] satisfies RigSpec[],
 
   /**

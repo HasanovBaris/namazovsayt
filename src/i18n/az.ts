@@ -19,7 +19,7 @@ export const az = {
     kicker: 'Yarış simulyatorları klubu',
     titleTop: 'Yüksək sürət,',
     titleBottom: 'cəriməsiz sürüşlər',
-    lead: 'Xırdalan və Nərimanovda yarış kokpitləri. Force feedback direksiyon, üç pedal, yüksək parametrli kompüterlər — otur və sürüşü hiss et.',
+    lead: '',
     badgeHourSuffix: '1 saat',
     badgeBranches: '2 filial',
     badgeHoursPrefix: 'Gecə',
@@ -29,20 +29,20 @@ export const az = {
   about: {
     kicker: 'Haqqımızda',
     title: 'Trek həmişə açıqdır',
-    p1: 'Namazov Game Center yalnız yarış simulyatorlarına həsr olunmuş klubdur. Hər kokpit tam quraşdırılmış dəstdir: geri qaytarma qüvvəli direksiyon, üç pedal, geniş ekran və oyunu bir saniyə də ləngitməyən kompüter.',
-    p2: 'İlk dəfə gəlirsənsə narahat olma — ayarları sənə uyğunlaşdırırıq, trek seçirik, ilk dövrələrdə yanında dururuq. Təcrübən varsa, vaxtını götür və öz rekordunu qov.',
+    p1: 'Namazov Game Center yalnız yarış simulyatorlarına həsr olunmuş klubdur. Hər kokpit tam quraşdırılmış dəstdir: geri qaytarma qüvvəli sükan dəsti, üç pedal, geniş ekran və oyunu bir saniyə də ləngitməyən kompüter.',
+    p2: 'İlk dəfə gəlirsənsə narahat olma, ayarları sənə uyğunlaşdırırıq, trek seçirik, ilk dövrələrdə yanında dururuq. Təcrübən varsa, vaxtını götür və öz rekordunu qov.',
     statRigs: 'Yarış masası',
     statPrice: 'Bir saat',
-    statClose: 'Gecə bağlanış',
-    statAge: 'Yaş həddi',
-    statAgeValue: 'Yoxdur',
+    statClose: 'İş saatları',
+    statAge: 'Minimum yaş',
+    statAgeValue: '12+',
   },
 
   rigs: {
     kicker: 'Avadanlıq',
     title: 'Kokpitin içində nə var',
     lead: 'Hər yer eyni səviyyədə qurulub — hansı kokpitə otursan, fərq hiss etməyəcəksən.',
-    wheelLabel: 'Direksiyon',
+    wheelLabel: 'Sükan dəsti',
     wheelDesc: 'Geri qaytarma qüvvəsi ilə — yolu ovcunda hiss edirsən.',
     pedalsLabel: 'Pedallar',
     pedalsDesc: 'Qaz, əyləc, mufta və əl ilə sürət qutusu.',
@@ -72,7 +72,7 @@ export const az = {
     include1: 'Kokpit və bütün avadanlıq',
     include2: 'İstədiyin oyun və trek',
     include3: 'İlk dəfədirsə — ayar və izah',
-    include4: 'Yaş məhdudiyyəti yoxdur',
+    include4: 'Minimum yaş həddi: 12+',
     note: 'Qabaqcadan ödəniş yoxdur. Vaxtı yerində seçirsən.',
   },
 
@@ -124,9 +124,9 @@ export const az = {
   ticker: {
     hour: 'saat',
     rigs: 'yarış masası',
-    until: 'Gecə',
-    noAgeLimit: 'Yaş həddi yoxdur',
-    forceFeedback: 'Geri qaytarma qüvvəsi',
+    noAgeLimit: '12+ yaş həddi',
+    proSimulator: 'Peşəkar yarış simulyatoru',
+    wideGameSelection: 'Geniş oyun seçimi',
   },
 
   a11y: {

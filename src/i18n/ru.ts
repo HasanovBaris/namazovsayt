@@ -15,7 +15,7 @@ export const ru: Dict = {
     kicker: 'Клуб гоночных симуляторов',
     titleTop: 'Высокая скорость,',
     titleBottom: 'заносы без штрафов',
-    lead: 'Гоночные кокпиты в Хырдалане и Наримановском районе. Руль с обратной связью, три педали, мощные компьютеры — садись и почувствуй трассу.',
+    lead: '',
     badgeHourSuffix: '1 час',
     badgeBranches: '2 филиала',
     badgeHoursPrefix: 'До',
@@ -30,8 +30,8 @@ export const ru: Dict = {
     statRigs: 'Гоночных мест',
     statPrice: 'Один час',
     statClose: 'Закрытие ночью',
-    statAge: 'Возрастной ценз',
-    statAgeValue: 'Нет',
+    statAge: 'Минимальный возраст',
+    statAgeValue: '12+',
   },
 
   rigs: {
@@ -68,7 +68,7 @@ export const ru: Dict = {
     include1: 'Кокпит и всё оборудование',
     include2: 'Любая игра и трасса',
     include3: 'Первый раз — настройка и объяснение',
-    include4: 'Без возрастных ограничений',
+    include4: 'Минимальный возраст: 12+',
     note: 'Предоплаты нет. Время выбираешь на месте.',
   },
 
@@ -119,9 +119,9 @@ export const ru: Dict = {
   ticker: {
     hour: 'час',
     rigs: 'гоночных мест',
-    until: 'До',
-    noAgeLimit: 'Без возрастных ограничений',
-    forceFeedback: 'Обратная связь руля',
+    noAgeLimit: 'Возрастное ограничение 12+',
+    proSimulator: 'Профессиональный гоночный симулятор',
+    wideGameSelection: 'Широкий выбор игр',
   },
 
   a11y: {
