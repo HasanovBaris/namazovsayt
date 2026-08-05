@@ -8,7 +8,7 @@
     <title>Namazov Game Center — Yarış simulyatorları klubu | Xırdalan &amp; Nərimanov</title>
     <meta
       name="description"
-      content="Namazov Game Center — Xırdalan və Nərimanovda yarış simulyatorları klubu. 15+ simulyator, yüksək parametrli kompüterlər, 1 saat 5 ₼. Gecə 02:00-a kimi açıq, yaş həddi yoxdur."
+      content="Namazov Game Center — Xırdalan və Nərimanovda yarış simulyatorları klubu. 25 yarış masası, yüksək parametrli kompüterlər, 1 saat 5 ₼. Gecə 02:00-a kimi açıq, yaş həddi yoxdur."
     />
     <link rel="canonical" href="https://namazovgamecenter.az/" />
 
@@ -17,15 +17,15 @@
     <meta property="og:title" content="Namazov Game Center — Yarış simulyatorları klubu" />
     <meta
       property="og:description"
-      content="15+ yarış simulyatoru, yüksək parametrli kompüterlər, 1 saat 5 ₼. Xırdalan və Nərimanov filialları, gecə 02:00-a kimi."
+      content="25 yarış masası, yüksək parametrli kompüterlər, 1 saat 5 ₼. Xırdalan və Nərimanov filialları, gecə 02:00-a kimi."
     />
     <meta property="og:locale" content="az_AZ" />
     <meta property="og:locale:alternate" content="ru_RU" />
     <meta property="og:locale:alternate" content="en_US" />
     <meta name="twitter:card" content="summary_large_image" />
 
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
 
     <link
       rel="preload"
@@ -134,10 +134,10 @@
       }
       .ngc-card:hover {
         transform: translateY(-5px);
-        filter: drop-shadow(0 16px 34px rgba(255, 46, 23, 0.16));
+        filter: drop-shadow(0 16px 34px rgba(255, 158, 0, 0.16));
       }
       .ngc-card:hover > div {
-        border-color: rgba(255, 46, 23, 0.42);
+        border-color: rgba(255, 158, 0, 0.42);
       }
 
       /* ── Game logos sit back until you look at them ───────────────── */
@@ -171,7 +171,7 @@
         transform: translateY(-2px);
       }
       .ngc-chip:hover > div {
-        border-color: rgba(255, 46, 23, 0.5);
+        border-color: rgba(255, 158, 0, 0.5);
         background-color: #1a1d22;
       }
 
@@ -179,9 +179,9 @@
       .ngc-grad > div {
         background-image: linear-gradient(
           100deg,
-          #ff2e17 0%,
-          #ffb020 45%,
-          #ff2e17 90%
+          #ff9e00 0%,
+          #ffd27a 45%,
+          #ff9e00 90%
         );
         background-size: 200% 100%;
         -webkit-background-clip: text;
@@ -251,11 +251,11 @@
         0%,
         100% {
           opacity: 1;
-          box-shadow: 0 0 0 0 rgba(255, 46, 23, 0.55);
+          box-shadow: 0 0 0 0 rgba(255, 158, 0, 0.55);
         }
         70% {
           opacity: 0.85;
-          box-shadow: 0 0 0 7px rgba(255, 46, 23, 0);
+          box-shadow: 0 0 0 7px rgba(255, 158, 0, 0);
         }
       }
 
@@ -301,7 +301,7 @@
         left: 0;
         height: 2px;
         z-index: 200;
-        background: linear-gradient(90deg, #ff2e17, #ffb020);
+        background: linear-gradient(90deg, #ff9e00, #ffc24a);
         transition: width 0.08s linear;
         pointer-events: none;
       }
@@ -331,7 +331,7 @@
         opacity: 0.82;
       }
       ::selection {
-        background: #ff2e17;
+        background: #ff9e00;
         color: #fff;
       }
       ::-webkit-scrollbar {
@@ -366,8 +366,10 @@
         "@context": "https://schema.org",
         "@type": "EntertainmentBusiness",
         "name": "Namazov Game Center",
-        "description": "Yarış simulyatorları klubu — 15+ simulyator, yüksək parametrli kompüterlər.",
+        "description": "Yarış simulyatorları klubu — 25 yarış masası, yüksək parametrli kompüterlər.",
         "url": "https://namazovgamecenter.az/",
+        "logo": "https://namazovgamecenter.az/media/brand/namazov-game-center.png",
+        "image": "https://namazovgamecenter.az/media/photos/sim-hall.jpg",
         "priceRange": "5 AZN / saat",
         "sameAs": [
           "https://www.instagram.com/namazovgamecenter/",
@@ -378,22 +380,25 @@
         "location": [
           {
             "@type": "Place",
-            "name": "Namazov Game Center — Xırdalan",
+            "name": "Namazov Game Center — Nərimanov",
+            "telephone": "+994554797202",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Qalubiyyə küçəsi",
-              "addressLocality": "Xırdalan",
-              "addressRegion": "Abşeron",
+              "streetAddress": "Gülarə Qədirbəyova 14",
+              "addressLocality": "Bakı",
+              "addressRegion": "Nərimanov",
               "addressCountry": "AZ"
             }
           },
           {
             "@type": "Place",
-            "name": "Namazov Game Center — Nərimanov",
+            "name": "Namazov Game Center — Xırdalan",
+            "telephone": "+994554797201",
             "address": {
               "@type": "PostalAddress",
-              "addressLocality": "Bakı",
-              "addressRegion": "Nərimanov",
+              "streetAddress": "Qalubiyyə 60",
+              "addressLocality": "Xırdalan",
+              "addressRegion": "Abşeron",
               "addressCountry": "AZ"
             }
           }

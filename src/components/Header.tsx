@@ -65,7 +65,7 @@ export function Header() {
       >
         <View style={styles.inner}>
           <a href="#top" aria-label="Namazov Game Center">
-            <Logo size={isDesktop ? 26 : 22} />
+            <Logo size={isDesktop ? 44 : 34} />
           </a>
 
           {showNav ? (

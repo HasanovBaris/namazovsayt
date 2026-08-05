@@ -23,7 +23,7 @@ export function Footer() {
     >
       <View style={[styles.inner, isDesktop && styles.innerRow]}>
         <View style={!isDesktop && styles.blockSpacing}>
-          <Logo size={24} />
+          <Logo size={44} />
           <Text style={styles.tagline}>{t.footer.tagline}</Text>
         </View>
 

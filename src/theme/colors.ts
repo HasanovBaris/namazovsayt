@@ -12,14 +12,14 @@ export const colors = {
   border: '#23262C',
   borderHi: '#33373F',
 
-  /** Brake-light red — the single brand accent. */
-  accent: '#FF2E17',
-  accentSoft: 'rgba(255, 46, 23, 0.12)',
-  accentEdge: 'rgba(255, 46, 23, 0.35)',
+  /** The orange straight off the logo wordmark — the single brand accent. */
+  accent: '#FF9E00',
+  accentSoft: 'rgba(255, 158, 0, 0.12)',
+  accentEdge: 'rgba(255, 158, 0, 0.35)',
 
-  /** Amber — used sparingly for the headline number. */
-  amber: '#FFB020',
-  amberSoft: 'rgba(255, 176, 32, 0.12)',
+  /** A lighter gold, used sparingly for the headline number. */
+  amber: '#FFC24A',
+  amberSoft: 'rgba(255, 194, 74, 0.12)',
 
   text: '#F2F3F5',
   textDim: '#9AA0A8',

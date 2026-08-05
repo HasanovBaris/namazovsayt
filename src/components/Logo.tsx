@@ -1,58 +1,33 @@
-import { StyleSheet, Text, View } from 'react-native'
-import { colors } from '../theme/colors'
-import { fonts } from '../theme/typography'
+import { StyleSheet, View } from 'react-native'
+import { site } from '../data/content'
+
+/** Width-to-height of the trimmed artwork, so callers only pick a height. */
+const RATIO = 900 / 203
 
 interface LogoProps {
-  /** Height of the "N" mark in pixels. The wordmark scales with it. */
+  /** Height of the lockup in pixels. The width follows the artwork. */
   size?: number
-  /** Hide the text and show only the mark (used for tight layouts). */
-  markOnly?: boolean
 }
 
 /**
- * The brand mark: an italic "N" whose diagonal is cut in the accent red, so the
- * letter reads as a racing line through an apex. Drawn inline as SVG — about
- * 1 KB and sharp at any size.
+ * The club's own logo: a car silhouette over the orange NAMAZOV wordmark.
+ *
+ * Shipped as a trimmed transparent PNG rather than traced to SVG — the
+ * silhouette carries too much curve detail for hand-written paths to stay
+ * faithful, and at 52 KB it costs less than the fonts already do.
  */
-export function Logo({ size = 28, markOnly = false }: LogoProps) {
-  const width = (size * 40) / 44
+export function Logo({ size = 40 }: LogoProps) {
+  const width = Math.round(size * RATIO)
 
   return (
     <View style={styles.row}>
-      <svg
+      <img
+        src={site.logo}
+        alt={site.name}
         width={width}
         height={size}
-        viewBox="0 0 40 44"
-        fill="none"
-        aria-hidden="true"
-        focusable="false"
-        style={{ display: 'block', flexShrink: 0 }}
-      >
-        <path d="M0 44 L7.5 44 L14.5 0 L7 0 Z" fill={colors.text} />
-        <path d="M25.5 44 L33 44 L40 0 L32.5 0 Z" fill={colors.text} />
-        <path d="M7 0 L14.5 0 L33 44 L25.5 44 Z" fill={colors.accent} />
-      </svg>
-
-      {!markOnly && (
-        <View style={styles.words}>
-          <Text
-            style={[
-              styles.wordTop,
-              { fontSize: size * 0.62, lineHeight: size * 0.66 },
-            ]}
-          >
-            NAMAZOV
-          </Text>
-          <Text
-            style={[
-              styles.wordBottom,
-              { fontSize: size * 0.3, lineHeight: size * 0.38 },
-            ]}
-          >
-            GAME CENTER
-          </Text>
-        </View>
-      )}
+        style={{ width, height: size, display: 'block' }}
+      />
     </View>
   )
 }
@@ -61,21 +36,5 @@ const styles = StyleSheet.create({
   row: {
     flexDirection: 'row',
     alignItems: 'center',
-  },
-  words: {
-    marginLeft: 10,
-    justifyContent: 'center',
-  },
-  wordTop: {
-    fontFamily: fonts.display,
-    fontWeight: '800',
-    color: colors.text,
-    letterSpacing: -0.3,
-  },
-  wordBottom: {
-    fontFamily: fonts.display,
-    fontWeight: '600',
-    color: colors.textDim,
-    letterSpacing: 3.2,
   },
 })

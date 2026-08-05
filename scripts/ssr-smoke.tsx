@@ -21,13 +21,13 @@ const html = renderToString(element)
 const css = renderToStaticMarkup(getStyleElement())
 
 if (process.env.DUMP_CSS) {
-  const hit = css.match(/.{0,70}(46,\s*23|ff2e17).{0,40}/i)
+  const hit = css.match(/.{0,70}(158,\s*0|ff9e00).{0,40}/i)
   console.log('colour sample:', hit ? hit[0] : 'NOT FOUND')
 }
 
 /** Strings that must appear on the rendered page. */
 const expected: [label: string, needle: string][] = [
-  ['logo wordmark', 'NAMAZOV'],
+  ['logo artwork', site.logo],
   ['hero headline', az.hero.titleBottom],
   ['hero lead', az.hero.lead.slice(0, 40)],
   ['about heading', az.about.title],
@@ -74,7 +74,7 @@ const cssRules: [label: string, ok: boolean][] = [
   ],
   ['body line-height present', css.includes('line-height:1.65')],
   // react-native-web normalises hex colours to rgba(), so match that form.
-  ['accent colour used', css.includes('rgba(255,46,23')],
+  ['accent colour used', css.includes('rgba(255,158,0')],
   ['display font wired up', css.includes('Exo 2')],
 ]
 

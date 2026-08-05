@@ -45,6 +45,9 @@ export const site = {
   /** Sahibi — Rafiq Namazov. */
   owner: 'Rafiq Namazov',
 
+  /** Klubun öz logosu — başlıqda, altlıqda və favicon-da. */
+  logo: '/media/brand/namazov-game-center.png',
+
   price: {
     hour: 5,
     currency: '₼',
@@ -108,6 +111,7 @@ export const site = {
    * qalanları altda yazı kimi görünür. ⚠️ TODO — siyahını dəqiqləşdir.
    */
   games: [
+    { name: '3D Qaraj', logo: '/media/games/3d-qaraj.png' },
     { name: 'Assetto Corsa', logo: '/media/games/assetto-corsa.png' },
     { name: 'Forza Horizon 5', logo: '/media/games/forza-horizon-5.png' },
     { name: 'Grand Theft Auto V', logo: '/media/games/grand-theft-auto-v.png' },
