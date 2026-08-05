@@ -43,7 +43,7 @@ export const az = {
     title: 'Kokpitin içində nə var',
     lead: 'Hər yer eyni səviyyədə qurulub — hansı kokpitə otursan, fərq hiss etməyəcəksən.',
     wheelLabel: 'Sükan dəsti',
-    wheelDesc: 'Geri qaytarma qüvvəsi ilə — yolu ovcunda hiss edirsən.',
+    wheelDesc: 'Geri qaytarma qüvvəsi ilə yolu ovcunda hiss edirsən.',
     pedalsLabel: 'Pedallar',
     pedalsDesc: 'Qaz, əyləc, mufta və əl ilə sürət qutusu.',
     displayLabel: 'Ekran',
