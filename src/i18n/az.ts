@@ -71,7 +71,7 @@ export const az = {
     includesTitle: 'Qiymətə daxildir',
     include1: 'Kokpit və bütün avadanlıq',
     include2: 'İstədiyin oyun və trek',
-    include3: 'İlk dəfədirsə — ayar və izah',
+    include3: 'İlk dəfədirsə, ayar və izah',
     include4: 'Minimum yaş həddi: 12+',
     note: 'Qabaqcadan ödəniş yoxdur. Vaxtı yerində seçirsən.',
   },
