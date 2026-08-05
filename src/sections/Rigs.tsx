@@ -33,6 +33,19 @@ export function Rigs() {
           const { label, desc } = copy[rig.id]
           return (
             <Card key={rig.id}>
+              {rig.image && (
+                <img
+                  src={rig.image}
+                  alt={rig.value}
+                  style={{
+                    width: '100%',
+                    height: 160,
+                    objectFit: 'cover',
+                    borderRadius: 8,
+                    marginBottom: 12,
+                  }}
+                />
+              )}
               <View style={styles.head}>
                 <Text style={styles.label}>{label}</Text>
                 <View style={styles.rule} />

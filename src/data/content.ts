@@ -25,6 +25,7 @@ export interface RigSpec {
   id: 'wheel' | 'pedals' | 'display' | 'seat' | 'pc' | 'audio'
   /** Tərcümə olunmayan texniki dəyər. ⚠️ TODO — real avadanlıqla əvəz et. */
   value: string
+  image?: string
 }
 
 export interface Game {
@@ -98,7 +99,7 @@ export const site = {
    * real avadanlıqla əvəz olunmalıdır.
    */
   rigs: [
-    { id: 'wheel', value: 'Logitech G29 · 900°' },
+    { id: 'wheel', value: 'Logitech G29 · 900°', image: '/media/photos/logitech-g29.jpg' },
     { id: 'pedals', value: '3 pedal + H-shifter' },
     { id: 'display', value: '32" · 165 Hz' },
     { id: 'seat', value: 'AndaSeat Chair Luna / 2E Gaming Chair BASAN Black/Red' },
