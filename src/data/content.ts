@@ -102,7 +102,7 @@ export const site = {
     { id: 'pedals', value: '3 pedal + H-shifter' },
     { id: 'display', value: '32" · 165 Hz' },
     { id: 'seat', value: 'AndaSeat Chair Luna / 2E Gaming Chair BASAN Black/Red' },
-    { id: 'pc', value: 'RTX 4060 · 32 GB RAM' },
+    { id: 'pc', value: 'RTX 3060 / 4060 / 5060 · 32 GB RAM' },
     { id: 'audio', value: 'HyperX Cloud III' },
   ] satisfies RigSpec[],
 
