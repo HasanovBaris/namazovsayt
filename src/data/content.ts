@@ -60,8 +60,8 @@ export const site = {
     everyDay: true,
   },
 
-  /** Hər iki filialda cəmi yarış masası: 25 + 9. */
-  totalRigs: 34,
+  /** Hər iki filialda cəmi yarış masası: 16 + 9. */
+  totalRigs: 25,
 
   /** Yaş həddi yoxdur — təsdiqlənib. */
   hasAgeLimit: false,
@@ -77,7 +77,7 @@ export const site = {
     {
       id: 'nerimanov',
       phone: '+994 55 479 72 02',
-      rigCount: 25,
+      rigCount: 16,
       mapUrl:
         'https://www.google.com/maps/search/?api=1&query=Namazov+Game+Center+Gulara+Qadirbayova+14+Baku',
     },
