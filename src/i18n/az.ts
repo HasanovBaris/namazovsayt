@@ -59,7 +59,7 @@ export const az = {
   games: {
     kicker: 'Oyunlar',
     title: 'Nə sürəcəksən',
-    lead: 'Ciddi simulyatordan rahat arcade-ə qədər — hansı tərz xoşuna gəlirsə.',
+    lead: 'Ciddi simulyatordan rahat arcade-ə qədər, hansı tərz xoşuna gəlirsə.',
     more: 'Həmçinin oynanılır',
     note: 'Siyahı daim yenilənir. Xüsusi oyun istəyirsənsə, gələndə de — baxaq.',
   },
