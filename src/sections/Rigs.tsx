@@ -28,34 +28,51 @@ export function Rigs() {
 
   return (
     <Section id="rigs" kicker={t.rigs.kicker} title={t.rigs.title} lead={t.rigs.lead}>
-      <Grid maxColumns={3} gap={16}>
-        {site.rigs.map((rig) => {
-          const { label, desc } = copy[rig.id]
-          return (
-            <Card key={rig.id}>
-              {rig.image && (
-                <img
-                  src={rig.image}
-                  alt={rig.value}
-                  style={{
-                    width: '100%',
-                    height: 160,
-                    objectFit: 'cover',
-                    borderRadius: 8,
-                    marginBottom: 12,
-                  }}
-                />
-              )}
-              <View style={styles.head}>
-                <Text style={styles.label}>{label}</Text>
-                <View style={styles.rule} />
-              </View>
-              <Text style={styles.value}>{rig.value}</Text>
-              <Text style={styles.desc}>{desc}</Text>
-            </Card>
-          )
-        })}
-      </Grid>
+      <div style={{ position: 'relative', overflow: 'hidden', borderRadius: 16 }}>
+        {/* Opacity azaldılmış (low-opacity) arxa plan fotosu */}
+        <div
+          aria-hidden="true"
+          style={{
+            position: 'absolute',
+            inset: 0,
+            backgroundImage: 'url(/media/photos/cockpit-row.jpg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            opacity: 0.12,
+            filter: 'blur(2px)',
+            pointerEvents: 'none',
+          }}
+        />
+
+        <Grid maxColumns={3} gap={16}>
+          {site.rigs.map((rig) => {
+            const { label, desc } = copy[rig.id]
+            return (
+              <Card key={rig.id}>
+                {rig.image && (
+                  <img
+                    src={rig.image}
+                    alt={rig.value}
+                    style={{
+                      width: '100%',
+                      height: 160,
+                      objectFit: 'cover',
+                      borderRadius: 8,
+                      marginBottom: 12,
+                    }}
+                  />
+                )}
+                <View style={styles.head}>
+                  <Text style={styles.label}>{label}</Text>
+                  <View style={styles.rule} />
+                </View>
+                <Text style={styles.value}>{rig.value}</Text>
+                <Text style={styles.desc}>{desc}</Text>
+              </Card>
+            )
+          })}
+        </Grid>
+      </div>
     </Section>
   )
 }
