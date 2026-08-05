@@ -49,7 +49,7 @@ export const az = {
     displayLabel: 'Ekran',
     displayDesc: 'Yüksək təzələnmə tezliyi — sürətdə görüntü dağılmır.',
     seatLabel: 'Oturacaq',
-    seatDesc: 'Möhkəm bərkidilmiş yarış oturacağı və rama.',
+    seatDesc: 'Keyfiyyətli və yumşaq materiallar ilə maksimum rahatlıq.',
     pcLabel: 'Kompüter',
     pcDesc: 'Ayarları maksimumda saxlayan konfiqurasiya.',
     audioLabel: 'Səs',
