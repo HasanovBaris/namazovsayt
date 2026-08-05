@@ -100,6 +100,8 @@ export const az = {
     alt: {
       simHall: 'Namazov Game Center-in zalı — sıra ilə düzülmüş yarış masaları və oyunçular',
       cockpitRow: 'Yarış masasında oyunçu — sükan, pedallar və iki ekran',
+      gallery1: 'Namazov Game Center yarış simulyatoru zalından görüntü',
+      gallery2: 'Namazov Game Center yarış masası və avadanlıqlar',
     },
   },
 

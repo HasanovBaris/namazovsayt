@@ -96,6 +96,8 @@ export const en: Dict = {
     alt: {
       simHall: 'The Namazov Game Center hall — a row of racing rigs with players at the wheel',
       cockpitRow: 'A player at a racing rig — wheel, pedals and two screens',
+      gallery1: 'Namazov Game Center racing simulator hall view',
+      gallery2: 'Namazov Game Center racing rig and setup',
     },
   },
 

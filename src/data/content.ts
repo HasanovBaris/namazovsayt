@@ -37,7 +37,7 @@ export interface Game {
 
 export interface Photo {
   /** Alt mətni `t.gallery.alt[id]` açarından gəlir. */
-  id: 'simHall' | 'cockpitRow'
+  id: 'simHall' | 'cockpitRow' | 'gallery1' | 'gallery2'
   src: string
 }
 
@@ -137,6 +137,8 @@ export const site = {
   gallery: [
     { id: 'simHall', src: '/media/photos/sim-hall.jpg' },
     { id: 'cockpitRow', src: '/media/photos/cockpit-row.jpg' },
+    { id: 'gallery1', src: '/media/photos/gallery-1.jpg' },
+    { id: 'gallery2', src: '/media/photos/gallery-2.jpg' },
   ] satisfies Photo[],
 
   /** Hero-nun arxa fonu — qalereyadakı şəkillərdən biri təkrar işlədilir. */

@@ -96,6 +96,8 @@ export const ru: Dict = {
     alt: {
       simHall: 'Зал Namazov Game Center — ряд гоночных мест с игроками за рулём',
       cockpitRow: 'Игрок за гоночным местом — руль, педали и два экрана',
+      gallery1: 'Вид на зал гоночных симуляторов Namazov Game Center',
+      gallery2: 'Гоночное место и оборудование Namazov Game Center',
     },
   },
 
