@@ -121,7 +121,6 @@ export const site = {
    */
   games: [
     { name: '3D Qaraj', logo: '/media/games/3d-qaraj.png' },
-    { name: 'Assetto Corsa', logo: '/media/games/assetto-corsa.png' },
     { name: 'Forza Horizon 5', logo: '/media/games/forza-horizon-5.png' },
     { name: 'Grand Theft Auto V', logo: '/media/games/grand-theft-auto-v.png' },
     {
@@ -131,10 +130,6 @@ export const site = {
     {
       name: 'American Truck Simulator',
       logo: '/media/games/american-truck-simulator.png',
-    },
-    {
-      name: 'City Car Driving 2.0',
-      logo: '/media/games/city-car-driving.png',
     },
   ] satisfies Game[],
 
