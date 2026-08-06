@@ -75,7 +75,7 @@ export const en: Dict = {
   branches: {
     kicker: 'Locations',
     title: 'Where to find us',
-    lead: 'Two venues — one in the Narimanov district of Baku, one in Khirdalan. Same prices, same hours at both.',
+    lead: '',
     addressLabel: 'Address',
     phoneLabel: 'Phone',
     hoursLabel: 'Opening hours',

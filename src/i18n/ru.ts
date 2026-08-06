@@ -75,7 +75,7 @@ export const ru: Dict = {
   branches: {
     kicker: 'Филиалы',
     title: 'Где нас найти',
-    lead: 'Две точки — одна в Наримановском районе Баку, другая в Хырдалане. Одинаковые цены и часы работы.',
+    lead: '',
     addressLabel: 'Адрес',
     phoneLabel: 'Телефон',
     hoursLabel: 'Часы работы',

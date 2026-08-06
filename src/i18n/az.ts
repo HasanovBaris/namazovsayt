@@ -79,7 +79,7 @@ export const az = {
   branches: {
     kicker: 'Filiallar',
     title: 'Bizi harada tapacaqsan',
-    lead: 'İki filial — biri Bakıda Nərimanov rayonunda, biri Xırdalanda. Hər ikisi eyni qiymət, eyni saatlarla işləyir.',
+    lead: '',
     addressLabel: 'Ünvan',
     phoneLabel: 'Telefon',
     hoursLabel: 'İş saatı',
