@@ -124,6 +124,10 @@ export const site = {
       name: 'American Truck Simulator',
       logo: '/media/games/american-truck-simulator.png',
     },
+    {
+      name: 'City Car Driving 2.0',
+      logo: '/media/games/city-car-driving.png',
+    },
   ] satisfies Game[],
 
   /** Qalereya şəkilləri. Boş qalsa bölmə "tezliklə" göstərir. */
