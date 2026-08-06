@@ -124,13 +124,6 @@ export const site = {
       name: 'American Truck Simulator',
       logo: '/media/games/american-truck-simulator.png',
     },
-    { name: 'Assetto Corsa Competizione' },
-    { name: 'F1 25' },
-    { name: 'EA Sports WRC' },
-    { name: 'BeamNG.drive' },
-    { name: 'CarX Drift Racing' },
-    { name: 'iRacing' },
-    { name: 'Need for Speed' },
   ] satisfies Game[],
 
   /** Qalereya şəkilləri. Boş qalsa bölmə "tezliklə" göstərir. */

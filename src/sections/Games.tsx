@@ -53,17 +53,19 @@ export function Games() {
         ))}
       </Grid>
 
-      <Reveal>
-        <Text style={styles.moreLabel}>{t.games.more}</Text>
+      {rest.length > 0 && (
+        <Reveal>
+          <Text style={styles.moreLabel}>{t.games.more}</Text>
 
-        <View style={styles.chips}>
-          {rest.map((game) => (
-            <Chip key={game.name} label={game.name} />
-          ))}
-        </View>
+          <View style={styles.chips}>
+            {rest.map((game) => (
+              <Chip key={game.name} label={game.name} />
+            ))}
+          </View>
 
-        <Text style={styles.note}>{t.games.note}</Text>
-      </Reveal>
+          <Text style={styles.note}>{t.games.note}</Text>
+        </Reveal>
+      )}
     </Section>
   )
 }
