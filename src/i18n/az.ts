@@ -108,7 +108,7 @@ export const az = {
   contact: {
     kicker: 'Əlaqə',
     title: 'Bizə yaz və ya zəng et',
-    lead: 'Sualın varsa istənilən kanaldan yaz. Ən aktiv olduğumuz yer Instagram və TikTok-dur.',
+    lead: 'Gəlməzdən öncə rezervasiya etməyi unutma.',
     socialTitle: 'Sosial şəbəkələr',
     phonesTitle: 'Telefon',
     instagram: 'Instagram',
