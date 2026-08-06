@@ -64,8 +64,8 @@ export const site = {
     everyDay: true,
   },
 
-  /** Hər iki filialda cəmi yarış masası: 16 + 9. */
-  totalRigs: 25,
+  /** Hər iki filialda cəmi yarış masası: 9 + 15. */
+  totalRigs: 24,
 
   /** Minimum yaş həddi: 12+. */
   minAge: '12+',
@@ -79,18 +79,18 @@ export const site = {
 
   branches: [
     {
-      id: 'nerimanov',
-      phone: '+994 55 479 72 02',
-      rigCount: 16,
-      mapUrl:
-        'https://www.google.com/maps/search/?api=1&query=Namazov+Game+Center+Gulara+Qadirbayova+14+Baku',
-    },
-    {
       id: 'xirdalan',
       phone: '+994 55 479 72 01',
       rigCount: 9,
       mapUrl:
         'https://www.google.com/maps/search/?api=1&query=Namazov+Game+Center+Qalubiyya+60+Khirdalan',
+    },
+    {
+      id: 'nerimanov',
+      phone: '+994 55 479 72 02',
+      rigCount: 15,
+      mapUrl:
+        'https://www.google.com/maps/search/?api=1&query=Namazov+Game+Center+Gulara+Qadirbayova+14+Baku',
     },
   ] satisfies Branch[],
 
