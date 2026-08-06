@@ -16,10 +16,6 @@ export const en: Dict = {
     titleTop: 'High speed,',
     titleBottom: 'no penalty for drifting',
     lead: '',
-    badgeHourSuffix: '1 hour',
-    badgeBranches: '2 locations',
-    badgeHoursPrefix: 'Open until',
-    badgeHoursSuffix: '',
   },
 
   about: {

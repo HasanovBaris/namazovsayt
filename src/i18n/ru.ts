@@ -16,10 +16,6 @@ export const ru: Dict = {
     titleTop: 'Высокая скорость,',
     titleBottom: 'заносы без штрафов',
     lead: '',
-    badgeHourSuffix: '1 час',
-    badgeBranches: '2 филиала',
-    badgeHoursPrefix: 'До',
-    badgeHoursSuffix: ' ночи',
   },
 
   about: {

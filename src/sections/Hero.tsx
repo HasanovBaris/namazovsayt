@@ -1,8 +1,6 @@
 import { StyleSheet, Text, View, useWindowDimensions } from 'react-native'
 import { useI18n } from '../i18n'
 import { site } from '../data/content'
-import { Badge } from '../components/Badge'
-import { PinIcon } from '../components/Icon'
 import { colors } from '../theme/colors'
 import { fonts, typeScale } from '../theme/typography'
 import { breakpoints, layout } from '../theme/layout'
@@ -165,18 +163,6 @@ export function Hero() {
             {t.hero.lead}
           </Text>
         )}
-
-        <View style={styles.badges}>
-          <Badge
-            tone="accent"
-            strong={`${site.price.hour} ${site.price.currency}`}
-            label={t.hero.badgeHourSuffix}
-          />
-          <Badge
-            icon={<PinIcon size={16} color={colors.textDim} />}
-            label={t.hero.badgeBranches}
-          />
-        </View>
       </View>
     </View>
   )
@@ -226,10 +212,5 @@ const styles = StyleSheet.create({
     color: colors.textDim,
     marginTop: 24,
     maxWidth: 620,
-  },
-  badges: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    marginTop: 34,
   },
 })

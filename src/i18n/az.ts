@@ -20,10 +20,6 @@ export const az = {
     titleTop: 'Yüksək sürət,',
     titleBottom: 'cəriməsiz sürüşlər',
     lead: '',
-    badgeHourSuffix: '1 saat',
-    badgeBranches: '2 filial',
-    badgeHoursPrefix: 'Gecə',
-    badgeHoursSuffix: '-a kimi',
   },
 
   about: {
