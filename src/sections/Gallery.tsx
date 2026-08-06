@@ -33,10 +33,10 @@ export function Gallery() {
 
   return (
     <Section id="gallery" kicker={t.gallery.kicker} title={t.gallery.title}>
-      {/* The club photos are shot vertically, so they run two-up rather than
-          three-up — three portrait tiles on one row leaves them postage-stamp
-          sized on a wide screen. */}
-      <Grid maxColumns={2} gap={14}>
+      {/* The photos are all shot vertically. Two-up keeps them large, but past
+          six that makes the section scroll forever — so a longer set goes
+          three-up instead. */}
+      <Grid maxColumns={photos.length > 6 ? 3 : 2} gap={14}>
         {photos.length > 0
           ? photos.map((photo) => (
               <div key={photo.src} className="ngc-card ngc-photo">

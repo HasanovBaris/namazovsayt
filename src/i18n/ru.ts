@@ -98,6 +98,10 @@ export const ru: Dict = {
       cockpitRow: 'Игрок за гоночным местом — руль, педали и два экрана',
       gallery1: 'Вид на зал гоночных симуляторов Namazov Game Center',
       gallery2: 'Гоночное место и оборудование Namazov Game Center',
+      hallWide: 'Общий вид зала — гоночные места по обе стороны, вывеска NAMAZOV GAME CENTER в глубине',
+      rigRow: 'Ряд гоночных мест друг за другом, номера на стене',
+      receptionRig: 'Гоночное место у стойки — игрок за рулём',
+      guestSign: 'Гость клуба у вывески NAMAZOV GAME CENTER',
     },
   },
 

@@ -37,7 +37,15 @@ export interface Game {
 
 export interface Photo {
   /** Alt mətni `t.gallery.alt[id]` açarından gəlir. */
-  id: 'simHall' | 'cockpitRow' | 'gallery1' | 'gallery2'
+  id:
+    | 'simHall'
+    | 'cockpitRow'
+    | 'gallery1'
+    | 'gallery2'
+    | 'hallWide'
+    | 'rigRow'
+    | 'receptionRig'
+    | 'guestSign'
   src: string
 }
 
@@ -136,6 +144,10 @@ export const site = {
     { id: 'cockpitRow', src: '/media/photos/cockpit-row.jpg' },
     { id: 'gallery1', src: '/media/photos/gallery-1.jpg' },
     { id: 'gallery2', src: '/media/photos/gallery-2.jpg' },
+    { id: 'hallWide', src: '/media/photos/hall-wide.jpg' },
+    { id: 'rigRow', src: '/media/photos/rig-row.jpg' },
+    { id: 'receptionRig', src: '/media/photos/reception-rig.jpg' },
+    { id: 'guestSign', src: '/media/photos/guest-sign.jpg' },
   ] satisfies Photo[],
 
   /** Hero-nun arxa fonu — qalereyadakı şəkillərdən biri təkrar işlədilir. */

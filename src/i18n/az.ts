@@ -102,6 +102,10 @@ export const az = {
       cockpitRow: 'Yarış masasında oyunçu — sükan, pedallar və iki ekran',
       gallery1: 'Namazov Game Center yarış simulyatoru zalından görüntü',
       gallery2: 'Namazov Game Center yarış masası və avadanlıqlar',
+      hallWide: 'Zalın ümumi görüntüsü — hər iki tərəfdə yarış masaları, arxada NAMAZOV GAME CENTER lövhəsi',
+      rigRow: 'Yan-yana düzülmüş yarış masaları və divardakı nömrələr',
+      receptionRig: 'Qəbul yanındakı yarış masası — oyunçu sükan arxasında',
+      guestSign: 'Klubun qonağı NAMAZOV GAME CENTER lövhəsinin qarşısında',
     },
   },
 

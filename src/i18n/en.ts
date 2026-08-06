@@ -98,6 +98,10 @@ export const en: Dict = {
       cockpitRow: 'A player at a racing rig — wheel, pedals and two screens',
       gallery1: 'Namazov Game Center racing simulator hall view',
       gallery2: 'Namazov Game Center racing rig and setup',
+      hallWide: 'Wide view of the hall — racing rigs down both sides, the NAMAZOV GAME CENTER sign at the back',
+      rigRow: 'A row of racing rigs side by side, numbered on the wall',
+      receptionRig: 'The rig by reception — a player at the wheel',
+      guestSign: 'A guest in front of the NAMAZOV GAME CENTER sign',
     },
   },
 
