@@ -118,7 +118,7 @@ export const az = {
   },
 
   footer: {
-    tagline: 'Yarış simulyatorları klubu · Xırdalan · Nərimanov',
+    tagline: 'Yarış simulyatorları klubu',
     rights: 'Bütün hüquqlar qorunur.',
   },
 

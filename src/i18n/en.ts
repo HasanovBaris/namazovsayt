@@ -114,7 +114,7 @@ export const en: Dict = {
   },
 
   footer: {
-    tagline: 'Racing simulator club · Khirdalan · Narimanov',
+    tagline: 'Racing simulator club',
     rights: 'All rights reserved.',
   },
 
