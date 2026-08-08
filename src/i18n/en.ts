@@ -89,6 +89,9 @@ export const en: Dict = {
     kicker: 'Gallery',
     title: 'Inside the club',
     soon: 'Photos are coming soon. In the meantime, the latest footage is on Instagram and TikTok.',
+    prev: 'Previous photo',
+    next: 'Next photo',
+    goTo: 'Photo',
     alt: {
       simHall: 'The Namazov Game Center hall — a row of racing rigs with players at the wheel',
       cockpitRow: 'A player at a racing rig — wheel, pedals and two screens',

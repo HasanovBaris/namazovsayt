@@ -93,6 +93,9 @@ export const az = {
     kicker: 'Qalereya',
     title: 'Klubun içi',
     soon: 'Şəkillər tezliklə əlavə olunacaq. Hələlik ən yeni görüntülərə Instagram və TikTok-da baxa bilərsən.',
+    prev: 'Əvvəlki şəkil',
+    next: 'Növbəti şəkil',
+    goTo: 'Şəkil',
     alt: {
       simHall: 'Namazov Game Center-in zalı — sıra ilə düzülmüş yarış masaları və oyunçular',
       cockpitRow: 'Yarış masasında oyunçu — sükan, pedallar və iki ekran',
