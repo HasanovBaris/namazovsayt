@@ -111,7 +111,7 @@ export const az = {
   contact: {
     kicker: 'Əlaqə',
     title: 'Bizə yaz və ya zəng et',
-    lead: 'Gəlməzdən öncə rezervasiya etməyi unutma.',
+    lead: 'Gəlməzdən öncə rezervasiya etməyi unutma',
     socialTitle: 'Sosial şəbəkələr',
     phonesTitle: 'Telefon',
     instagram: 'Instagram',
