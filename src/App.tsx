@@ -8,6 +8,7 @@ import { Hero } from './sections/Hero'
 import { About } from './sections/About'
 import { Rigs } from './sections/Rigs'
 import { Games } from './sections/Games'
+import { Garage } from './sections/Garage'
 import { Pricing } from './sections/Pricing'
 import { Branches } from './sections/Branches'
 import { Gallery } from './sections/Gallery'
@@ -25,6 +26,7 @@ export default function App() {
         <About />
         <Rigs />
         <Games />
+        <Garage />
         <Pricing />
         <Marquee />
         <Branches />

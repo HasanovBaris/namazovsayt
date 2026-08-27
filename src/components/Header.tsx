@@ -33,6 +33,7 @@ export function Header() {
     { href: '#about', label: t.nav.about },
     { href: '#rigs', label: t.nav.rigs },
     { href: '#games', label: t.nav.games },
+    { href: '#garage', label: t.nav.garage },
     { href: '#pricing', label: t.nav.pricing },
     { href: '#branches', label: t.nav.branches },
     { href: '#contact', label: t.nav.contact },

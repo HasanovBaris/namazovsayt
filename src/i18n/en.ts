@@ -6,6 +6,7 @@ export const en: Dict = {
     about: 'About',
     rigs: 'Rigs',
     games: 'Games',
+    garage: 'Garage',
     pricing: 'Pricing',
     branches: 'Locations',
     contact: 'Contact',
@@ -102,6 +103,22 @@ export const en: Dict = {
       receptionRig: 'The rig by reception — a player at the wheel',
       guestSign: 'A guest in front of the NAMAZOV GAME CENTER sign',
     },
+  },
+
+  garage: {
+    kicker: 'Garage',
+    title: 'The server garage',
+    lead: 'The cars you meet on the roads of the roleplay server we run at the club. From a classic E39 to the newest Grandeur — all of it in-game, all of it yours to drive.',
+    all: 'All',
+    other: 'Other',
+    unit: 'cars',
+    more: 'Show more',
+    altSuffix: 'car on the server',
+    open: 'Open large photo',
+    close: 'Close',
+    prev: 'Previous car',
+    next: 'Next car',
+    note: 'The server fleet keeps growing — ask us what landed this week when you drop by.',
   },
 
   contact: {

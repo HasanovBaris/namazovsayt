@@ -10,6 +10,7 @@ export const az = {
     about: 'Haqqımızda',
     rigs: 'Avadanlıq',
     games: 'Oyunlar',
+    garage: 'Qaraj',
     pricing: 'Qiymət',
     branches: 'Filiallar',
     contact: 'Əlaqə',
@@ -106,6 +107,22 @@ export const az = {
       receptionRig: 'Qəbul yanındakı yarış masası — oyunçu sükan arxasında',
       guestSign: 'Klubun qonağı NAMAZOV GAME CENTER lövhəsinin qarşısında',
     },
+  },
+
+  garage: {
+    kicker: 'Qaraj',
+    title: 'Serverin qarajı',
+    lead: 'Klubda sürdüyümüz roleplay serverində yolda gördüyün maşınlar. Klassik E39-dan tutmuş yeni Grandeur-a qədər — hamısı oyunun içindədir, hamısı sənin sürməyin üçün.',
+    all: 'Hamısı',
+    other: 'Digər',
+    unit: 'maşın',
+    more: 'Daha çox göstər',
+    altSuffix: 'serverdəki avtomobil',
+    open: 'Böyük şəkildə bax',
+    close: 'Bağla',
+    prev: 'Əvvəlki maşın',
+    next: 'Növbəti maşın',
+    note: 'Avtopark serverdə daim yenilənir — gələndə soruş, hansı yenilər gəlib.',
   },
 
   contact: {

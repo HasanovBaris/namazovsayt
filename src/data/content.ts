@@ -107,12 +107,20 @@ export const site = {
    * real avadanlıqla əvəz olunmalıdır.
    */
   rigs: [
-    { id: 'wheel', value: 'Logitech G29 · 900°', image: '/media/photos/logitech-g29.jpg' },
-    { id: 'pedals', value: '3 pedal + H-shifter' },
-    { id: 'display', value: '32" · 165 Hz' },
-    { id: 'seat', value: 'AndaSeat Chair Luna / 2E Gaming Chair BASAN Black/Red' },
-    { id: 'pc', value: 'RTX 3060 / 4060 / 5060 · 32 GB RAM' },
-    { id: 'audio', value: 'HyperX Cloud III' },
+    { id: 'wheel', value: 'Logitech G29 · 900°', image: '/media/photos/rig/wheel.jpg' },
+    { id: 'pedals', value: '3 pedal + H-shifter', image: '/media/photos/rig/pedals.jpg' },
+    { id: 'display', value: '32" · 165 Hz', image: '/media/photos/rig/display.jpg' },
+    {
+      id: 'seat',
+      value: 'AndaSeat Chair Luna / 2E Gaming Chair BASAN Black/Red',
+      image: '/media/photos/rig/seat.jpg',
+    },
+    {
+      id: 'pc',
+      value: 'RTX 3060 / 4060 / 5060 · 32 GB RAM',
+      image: '/media/photos/rig/pc.jpg',
+    },
+    { id: 'audio', value: 'HyperX Cloud III', image: '/media/photos/rig/audio.jpg' },
   ] satisfies RigSpec[],
 
   /**

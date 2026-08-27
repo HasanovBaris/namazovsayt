@@ -50,17 +50,22 @@ export function Rigs() {
             return (
               <Card key={rig.id}>
                 {rig.image && (
-                  <img
-                    src={rig.image}
-                    alt={rig.value}
-                    style={{
-                      width: '100%',
-                      height: 160,
-                      objectFit: 'cover',
-                      borderRadius: 8,
-                      marginBottom: 12,
-                    }}
-                  />
+                  /* Full-bleed band: the negative margins cancel the card's
+                     own padding so the photo meets the rounded border. */
+                  <div className="ngc-photo" style={photoBand}>
+                    <img
+                      src={rig.image}
+                      alt={`${label} — ${rig.value}`}
+                      loading="lazy"
+                      decoding="async"
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                        display: 'block',
+                      }}
+                    />
+                  </div>
                 )}
                 <View style={styles.head}>
                   <Text style={styles.label}>{label}</Text>
@@ -75,6 +80,15 @@ export function Rigs() {
       </div>
     </Section>
   )
+}
+
+/** Card padding is 22 — the band reaches past it on three sides. */
+const photoBand: React.CSSProperties = {
+  margin: '-22px -22px 18px',
+  aspectRatio: '16 / 9',
+  overflow: 'hidden',
+  backgroundColor: colors.bgAlt,
+  borderBottom: `1px solid ${colors.border}`,
 }
 
 const styles = StyleSheet.create({
