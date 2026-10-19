@@ -21,6 +21,7 @@ export function Marquee() {
     t.ticker.noAgeLimit,
     t.branches.xirdalanName,
     t.branches.nerimanovName,
+    t.branches.neftchilerName,
   ]
 
   const sequence = [...items, ...items]

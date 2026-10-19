@@ -77,6 +77,7 @@ export const ru: Dict = {
     phoneLabel: 'Телефон',
     hoursLabel: 'Часы работы',
     rigsLabel: 'гоночных мест',
+    priceLabel: 'Цена',
     mapAction: 'Открыть на карте',
     phoneSoon: 'Скоро добавим',
     everyDay: 'Ежедневно',
@@ -84,6 +85,8 @@ export const ru: Dict = {
     xirdalanAddress: 'ул. Галубия 60, Хырдалан',
     nerimanovName: 'Нариманов',
     nerimanovAddress: 'ул. Гюляра Кадырбекова 14, Баку',
+    neftchilerName: 'Нефтчиляр',
+    neftchilerAddress: 'ул. Рустама Рустамова 32А, Баку',
   },
 
   gallery: {

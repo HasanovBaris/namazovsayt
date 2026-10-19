@@ -9,7 +9,7 @@
  * ════════════════════════════════════════════════════════════════════════
  */
 
-export type BranchId = 'xirdalan' | 'nerimanov'
+export type BranchId = 'xirdalan' | 'nerimanov' | 'neftchiler'
 
 export interface Branch {
   id: BranchId
@@ -17,6 +17,8 @@ export interface Branch {
   phone: string
   /** Neçə yarış masası var. Təsdiqlənib. */
   rigCount: number
+  /** Bu filialda bir saatın qiyməti. */
+  pricePerHour: number
   /** Google Maps axtarış linki. Dəqiq pin olanda düz koordinat linkini qoy. */
   mapUrl: string
 }
@@ -72,8 +74,8 @@ export const site = {
     everyDay: true,
   },
 
-  /** Hər iki filialda cəmi yarış masası: 9 + 15. */
-  totalRigs: 24,
+  /** Üç filialda cəmi yarış masası: 9 + 16 + 22. */
+  totalRigs: 47,
 
   /** Minimum yaş həddi: 12+. */
   minAge: '12+',
@@ -90,15 +92,25 @@ export const site = {
       id: 'xirdalan',
       phone: '+994 55 479 72 01',
       rigCount: 9,
+      pricePerHour: 5,
       mapUrl:
         'https://www.google.com/maps/search/?api=1&query=Namazov+Game+Center+Qalubiyya+60+Khirdalan',
     },
     {
       id: 'nerimanov',
       phone: '+994 55 479 72 02',
-      rigCount: 15,
+      rigCount: 16,
+      pricePerHour: 5,
       mapUrl:
         'https://www.google.com/maps/search/?api=1&query=Namazov+Game+Center+Gulara+Qadirbayova+14+Baku',
+    },
+    {
+      id: 'neftchiler',
+      phone: '+994 70 479 72 03',
+      rigCount: 22,
+      pricePerHour: 6,
+      mapUrl:
+        'https://www.google.com/maps/search/?api=1&query=Namazov+Game+Center+Rustam+Rustamov+32A+Baku',
     },
   ] satisfies Branch[],
 

@@ -90,6 +90,7 @@ export function Contact() {
   const branchName = {
     xirdalan: t.branches.xirdalanName,
     nerimanov: t.branches.nerimanovName,
+    neftchiler: t.branches.neftchilerName,
   }
 
   return (

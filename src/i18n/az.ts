@@ -81,6 +81,7 @@ export const az = {
     phoneLabel: 'Telefon',
     hoursLabel: 'İş saatı',
     rigsLabel: 'yarış masası',
+    priceLabel: 'Qiymət',
     mapAction: 'Xəritədə aç',
     phoneSoon: 'Tezliklə əlavə olunacaq',
     everyDay: 'Hər gün',
@@ -88,6 +89,8 @@ export const az = {
     xirdalanAddress: 'Qalubiyyə 60, Xırdalan',
     nerimanovName: 'Nərimanov',
     nerimanovAddress: 'Gülarə Qədirbəyova 14, Bakı',
+    neftchilerName: 'Neftçilər',
+    neftchilerAddress: 'Rüstəm Rüstəmov 32A, Bakı',
   },
 
   gallery: {

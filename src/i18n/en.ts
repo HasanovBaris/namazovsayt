@@ -77,6 +77,7 @@ export const en: Dict = {
     phoneLabel: 'Phone',
     hoursLabel: 'Opening hours',
     rigsLabel: 'racing rigs',
+    priceLabel: 'Price',
     mapAction: 'Open in maps',
     phoneSoon: 'Coming soon',
     everyDay: 'Every day',
@@ -84,6 +85,8 @@ export const en: Dict = {
     xirdalanAddress: '60 Qalubiyya St, Khirdalan',
     nerimanovName: 'Narimanov',
     nerimanovAddress: '14 Gulara Qadirbayova St, Baku',
+    neftchilerName: 'Neftchilar',
+    neftchilerAddress: '32A Rustam Rustamov St, Baku',
   },
 
   gallery: {

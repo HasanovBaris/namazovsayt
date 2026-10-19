@@ -24,6 +24,10 @@ function placeCopy(t: Dict): Record<BranchId, { name: string; address: string }>
       name: t.branches.nerimanovName,
       address: t.branches.nerimanovAddress,
     },
+    neftchiler: {
+      name: t.branches.neftchilerName,
+      address: t.branches.neftchilerAddress,
+    },
   }
 }
 
@@ -81,6 +85,15 @@ function BranchCard({ branch }: { branch: Branch }) {
         </DetailRow>
 
         <DetailRow
+          icon={<Text style={styles.currencyIcon}>{site.price.currency}</Text>}
+          label={t.branches.priceLabel}
+        >
+          <Text style={styles.detailValue}>
+            {branch.pricePerHour} {site.price.currency} / {t.pricing.perHour}
+          </Text>
+        </DetailRow>
+
+        <DetailRow
           icon={<PhoneIcon size={18} color={colors.textFaint} />}
           label={t.branches.phoneLabel}
         >
@@ -120,7 +133,7 @@ export function Branches() {
       lead={t.branches.lead}
       alt
     >
-      <Grid maxColumns={2} gap={16}>
+      <Grid maxColumns={3} gap={16}>
         {site.branches.map((branch) => (
           <BranchCard key={branch.id} branch={branch} />
         ))}
@@ -176,6 +189,13 @@ const styles = StyleSheet.create({
   detailIcon: {
     width: 24,
     marginTop: 2,
+  },
+  currencyIcon: {
+    fontFamily: fonts.display,
+    fontWeight: '700',
+    fontSize: 16,
+    lineHeight: 18,
+    color: colors.textFaint,
   },
   detailText: {
     flex: 1,
