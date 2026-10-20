@@ -56,6 +56,10 @@ export const site = {
   /** Sahibi — Rafiq Namazov. */
   owner: 'Rafiq Namazov',
 
+  /** Hüquqi şəxs — Meta Business Verification üçün saytda görünməlidir. */
+  legalName: 'Fərdi sahibkar Namazov Eldar Qılman oğlu',
+  taxId: '3104828512',
+
   /** Klubun öz logosu — başlıqda, altlıqda və favicon-da. */
   logo: '/media/brand/namazov-game-center.png',
 
