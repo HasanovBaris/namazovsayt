@@ -112,7 +112,7 @@ export const site = {
       id: 'neftchiler',
       phone: '+994 70 479 72 03',
       rigCount: 22,
-      pricePerHour: 6,
+      pricePerHour: 7,
       mapUrl:
         'https://www.google.com/maps/search/?api=1&query=Namazov+Game+Center+Rustam+Rustamov+32A+Baku',
     },
