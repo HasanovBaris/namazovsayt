@@ -32,9 +32,6 @@ export function Footer() {
             © {year} {site.name}
           </Text>
           <Text style={styles.copyDim}>{t.footer.rights}</Text>
-          <Text style={styles.copyDim}>
-            {site.legalName} · VÖEN {site.taxId}
-          </Text>
         </View>
       </View>
     </View>
